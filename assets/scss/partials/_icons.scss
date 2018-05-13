@@ -1,0 +1,46 @@
+[class^="swa--"], [class*=" swa--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'swa' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before{
+    position:relative;
+  }
+}
+
+.swa--logo:before {
+  content: "\e900";
+}
+.swa--video:before {
+  content: "\e901";
+}
+.swa--camera:before {
+  content: "\e902";
+}
+.swa--file:before {
+  content: "\e903";
+}
+.swa--sound:before {
+  content: "\e904";
+}
+.swa--instagram:before {
+  content: "\e905";
+}
+.swa--twitter:before {
+  content: "\e906";
+}
+.swa--facebook:before {
+  content: "\e907";
+}
+.swa--youtube:before {
+  content: "\e908";
+}

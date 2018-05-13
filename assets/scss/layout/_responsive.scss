@@ -1,0 +1,57 @@
+$mobile-breakpoint: 319 !default;
+$tablet-breakpoint: 639 !default;
+$desktop-breakpoint: 1023 !default;
+
+
+@function lower-bound($range) {
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}
+
+// Lower and upper bounds for each media size
+$toosmall-range:   (0, $mobile-breakpoint) !default;
+$mobile-range:   ($mobile-breakpoint  + 1, $tablet-breakpoint) !default;
+$tablet-range:  ($tablet-breakpoint  + 1, $desktop-breakpoint) !default;
+$desktop-range:  ($desktop-breakpoint + 1, 9999999999999999) !default;
+
+// Media Queries
+$screen: "screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+$mobile-up: $screen !default;
+$mobile-only: "#{$screen} and (max-width: #{upper-bound($mobile-range)}px)" !default;
+
+$tablet-down: "#{$screen} and (max-width:#{upper-bound($tablet-range)}px)" !default;
+$tablet-up: "#{$screen} and (min-width:#{lower-bound($tablet-range)}px)" !default;
+$tablet-only: "#{$screen} and (min-width:#{lower-bound($tablet-range)}px) and (max-width:#{upper-bound($tablet-range)})" !default;
+
+$desktop-down: "#{$screen} and (max-width:#{upper-bound($desktop-range)}px)" !default;
+$desktop-up: "#{$screen} and (min-width:#{lower-bound($desktop-range)}px)" !default;
+
+$retina: (
+  "#{$screen} and (-webkit-min-device-pixel-ratio: 2)",
+  "#{$screen} and (min--moz-device-pixel-ratio: 2)",
+  "#{$screen} and (-o-min-device-pixel-ratio: 2/1)",
+  "#{$screen} and (min-device-pixel-ratio: 2)",
+  "#{$screen} and (min-resolution: 192dpi)",
+  "#{$screen} and (min-resolution: 2dppx)"
+);
+
+
+@mixin breakpoint($range) {
+	@media #{$range} {
+		@content;
+	}
+}
+

@@ -1,0 +1,118 @@
+
+/*********************
+GENERAL STYLES
+*********************/
+
+// html,
+// body {
+// 	height:100%;
+// 	// overflow: hidden;
+// }
+
+html {
+	font-size: 14px;
+	//font-size: 16px;
+	height: 100%;
+	color:var(--color-primary);
+}
+
+body {
+	text-rendering: optimizelegibility;
+	@include font-smoothing(on);
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	color:var(--color-secondary) !important;
+	font-family:var(--font-primary );
+	font-weight:300;
+	background:var(--color-primary);
+}
+
+// /*********************
+// LAYOUT & GRID STYLES
+// *********************/
+
+// p {
+// 	font-family: $sans-light;
+// }
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family : var(--font-primary);
+	text-rendering: optimizelegibility;
+	@include font-smoothing(on);
+}
+
+
+sup{
+	font-size:40%;
+	top:-11px;
+}
+
+
+/* Backgrounds */
+
+
+body.modal-open {
+	overflow:hidden;
+}
+
+.modal{
+	z-index:999999999999;
+}
+
+/* Fonts */
+
+
+
+/* Links */
+
+a{
+	&:active, &:focus{
+		color:var(--color-black);
+		outline:none;
+	}
+
+	@media #{$desktop-up} {
+		&:hover{
+			color:var(--color-black);
+		}
+	}
+
+}
+
+
+/* Images */
+
+
+/* Form elements */
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+[type='checkbox'],
+[type='radio'],
+select,
+textarea{
+	margin: 0 0 0;
+	box-shadow:none;
+	outline:none;
+	&:focus{
+		box-shadow:none;
+		outline:none;
+	}
+}

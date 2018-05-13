@@ -1,0 +1,30 @@
+/*********************
+COLORS
+*********************/
+:root {
+	--color-white     : rgba(255, 255, 255, 1);
+	--color-black     : rgba(0, 0, 0, 1);
+
+	--color-facebook  : rgba(59, 89, 152, 1);
+	--color-twitter   : rgba(0, 172, 237, 1);
+	--color-linkedin  : rgba(0, 119, 181, 1);
+	--color-pinterest : RGBA(203,31,39,1.00);
+	--color-youtube   : RGB(205,32,31);
+	--color-instagram : RGB(222,209,193);
+	--color-rss       : rgba(242, 101, 34, 1);
+
+	--color-red       : #E50914;
+	--color-green     : #85C573;
+
+
+	--color-primary   : #820808;
+
+	--color-secondary : #dcd7af;
+
+	--color-third  	  : #666666;
+
+}
+
+$color-gradient-background-light: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(249,249,249,1) 100%);
+
+
