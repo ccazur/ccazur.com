@@ -30,8 +30,8 @@ module.exports = {
       { hid: 'og:image:height', property: "og:image:height", content: "279" },
       //Filled in index.vue : { property: "og:description", content: "Maison 239 m2 aux Mayons" },
       { hid: 'og:title', property: "og:title", content: "Maison Mayons - JLB Immobilier" },
-      { hid: 'og:url', property: "og:url", content: "https://maison-mayons.jlbimmobilier.com" },
-      { hid: 'og:image', property: "og:image", content: "https://maison-mayons.jlbimmobilier.com/img/icons/og-image.jpg" },
+      { hid: 'og:url', property: "og:url", content: "https://www.ccazur.com" },
+      { hid: 'og:image', property: "og:image", content: "https://www.ccazur.com/img/icons/og-image.jpg" },
       
       { hid: 'google-site-verification', property: "google-site-verification", content: "89V1Qptr6XhW9mmCge2fxz-XWKGHDO4tN-f271PDnBE" },
 
