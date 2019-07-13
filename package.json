@@ -5,15 +5,12 @@
   "author": "Nicolas Bages <nicolas.bages@weinto.com>",
   "private": true,
   "dependencies": {
-    "@nuxtjs/pwa": "latest",
-    "google-spreadsheet-to-json": "^1.0.0",
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
     "hash-files": "^1.1.1",
-    "node-sass": "^4.9.0",
-    "normalize.css": "^8.0.0",
-    "nuxt": "latest",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.8.1",
     "reset-css": "^3.0.0",
-    "sass-loader": "^7.0.1",
-    "vue-i18n": "^7.6.0"
+    "vue-i18n": "^7.8.1"
   },
   "scripts": {
     "dev": "nuxt",
@@ -24,14 +21,17 @@
     "precommit": "npm run lint"
   },
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.0.2",
+    "node-sass": "^4.9.0",
+    "google-spreadsheet-to-json": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "@nuxtjs/google-analytics": "^2.2.0",
     "babel-eslint": "^7.1.1",
     "eslint": "^3.15.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-html": "^2.0.0",
-    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^2.0.1",
-    "nuxt-i18n": "^3.2.3"
+    "nuxt-i18n": "^3.3.1"
   }
 }
