@@ -12,9 +12,6 @@
 		<h3>{{ $t('team_member2_name') }}</h3>
 		<p>{{ $t('team_member2_position') }}</p>
 
-		<h3>{{ $t('team_member3_name') }}</h3>
-		<p>{{ $t('team_member3_position') }}</p>
-
 		<p class="weintoltd" v-html="$t('team_collaboration')"></p>
 
 	</article>
